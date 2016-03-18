@@ -12,7 +12,7 @@ This is a simple javascript app that uses the github API to acquire the names of
 
 Clone this repo:
 ```
-git clone https://github.com/jakemento/github-javascriptwk1.git
+$ git clone https://github.com/jakemento/github-javascriptwk1.git
 ```
 
 Navigate to its directory:
