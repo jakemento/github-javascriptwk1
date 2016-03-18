@@ -10,7 +10,7 @@ $(document).ready(function() {
       for (i = 0; i < response.length; i++) {
         $('.showName').append("<li>repo name:" + response[i].name + "</li>");
         $('.showName').append("<li>description:" + response[i].description + "</li>");
-        $('.showName').append("<li>date:" + response[i].created_at + "</li>");
+        $('.showName').append("<li>date:" + response[i].created_at + "</li><br>");
 
       }
     }).fail(function(error) {
