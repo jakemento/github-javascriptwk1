@@ -1,7 +1,5 @@
 var apiKey = require('./../.env').apiKey;
 
-
-
 exports.getRepos = function() {
   $.get('https://api.github.com/users/'+ username + '/repos?access_token=' + apiKey).then(function(response) {
     console.log(response);
@@ -12,6 +10,6 @@ exports.getRepos = function() {
 
     }
   }).fail(function(error) {
-    $('.showName').text(error.message);
+    $('.showName').text(error.responseJSON.message);
   });
 };
